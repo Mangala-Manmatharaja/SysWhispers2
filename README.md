@@ -83,9 +83,9 @@ Add files and configure platform settings (x86/x64).
   ❌ Graphical subsystem syscalls (win32k.sys) are not supported.
   ❌ Tested on [Your Environments].
 
-🙏 Credits
-Based on the original SysWhispers2 by @Jackson_T and @modexpblog.
-Additional contributions by Mangala-Mnmatharaja🎯.
+## 🙏 Credits
+   Based on the original SysWhispers2 by @Jackson_T and @modexpblog.
+  Additional contributions by Mangala-Mnmatharaja🎯.
 
-📜 License
-Apache License 2.0. See LICENSE for details.
+## 📜 License
+Apache License 2.0. See LICENSE[http://www.apache.org/licenses/] for details.
