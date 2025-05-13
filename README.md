@@ -87,6 +87,46 @@ Add files and configure platform settings (x86/x64).
     x86_64-w64-mingw32-gcc main.c syscalls.c syscalls.rnd.x64.s -DRANDSYSCALL -Wall -o output.exe
     
 
+### Script Output
+
+```
+PS C:\Projects\SysWhispers2> py .\syswhispers.py --preset common --out-file syscalls_common
+
+python syswhispers.py -p all -a all -l all -o example-output/Syscalls
+
+                  .                         ,--.
+,-. . . ,-. . , , |-. o ,-. ,-. ,-. ,-. ,-.    /
+`-. | | `-. |/|/  | | | `-. | | |-' |   `-. ,-'
+`-' `-| `-' ' '   ' ' ' `-' |-' `-' '   `-' `---
+     /|                     |  @Jackson_T
+    `-'                     '  @modexpblog, 2021
+
+SysWhispers2: Why call the kernel when you can whisper?
+
+All functions selected.
+
+Complete! Files written to:
+        example-output/Syscalls.h
+        example-output/Syscalls.c
+        example-output/SyscallsStubs.std.x86.asm
+        example-output/SyscallsStubs.rnd.x86.asm
+        example-output/SyscallsStubs.std.x86.nasm
+        example-output/SyscallsStubs.rnd.x86.nasm
+        example-output/SyscallsStubs.std.x86.s
+        example-output/SyscallsStubs.rnd.x86.s
+        example-output/SyscallsInline.std.x86.h
+        example-output/SyscallsInline.rnd.x86.h
+        example-output/SyscallsStubs.std.x64.asm
+        example-output/SyscallsStubs.rnd.x64.asm
+        example-output/SyscallsStubs.std.x64.nasm
+        example-output/SyscallsStubs.rnd.x64.nasm
+        example-output/SyscallsStubs.std.x64.s
+        example-output/SyscallsStubs.rnd.x64.s
+        example-output/SyscallsInline.std.x64.h
+        example-output/SyscallsInline.rnd.x64.h
+```
+
+
 ## Related Articles and Projects
 
 - [@modexpblog](https://twitter.com/modexpblog): [Bypassing User-Mode Hooks and Direct Invocation of System Calls for Red Teams](https://www.mdsec.co.uk/2020/12/bypassing-user-mode-hooks-and-direct-invocation-of-system-calls-for-red-teams/)
