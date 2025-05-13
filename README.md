@@ -4,7 +4,9 @@
 
 ## 🔑 Key Differences from Original SysWhispers2
   ✅ Enhanced Features: [Describe modifications, e.g., "Added support for XYZ syscalls."]
+  
   ✅ Compatibility: [Mention extended OS/toolchain support.]
+  
   ✅ Optimizations: [Highlight performance/usability improvements.]
 
 ## 🛠 Features
