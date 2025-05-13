@@ -8,9 +8,13 @@
   ✅ Optimizations: [Highlight performance/usability improvements.]
 
 ## 🛠 Features
+
 ✔ Generates header/ASM files for direct syscalls.
+
 ✔ Supports all core syscalls with cross-version compatibility.
+
 ✔ Randomized function name hashes for evasion.
+
 ✔ Lightweight & easy integration.
 
 ## 📥 Installation
@@ -45,15 +49,15 @@
 ## 📜 Supported Functions
   Using --preset common includes:
 
-  -NtCreateProcess
+  - NtCreateProcess
 
-  -NtOpenThread
+  - NtOpenThread
 
-  -NtReadVirtualMemory
+  - NtReadVirtualMemory
 
-  -NtAllocateVirtualMemory
+  - NtAllocateVirtualMemory
 
-  -... and more.
+  - ... and more.
 
 <details> <summary>📂 Click to expand full list</summary>
 [Include the same list as in the original README or update it if needed.]
@@ -79,13 +83,38 @@ Add files and configure platform settings (x86/x64).
 
     x86_64-w64-mingw32-gcc main.c syscalls.c syscalls.rnd.x64.s -DRANDSYSCALL -Wall -o output.exe
     
+
+## Related Articles and Projects
+
+- [@modexpblog](https://twitter.com/modexpblog): [Bypassing User-Mode Hooks and Direct Invocation of System Calls for Red Teams](https://www.mdsec.co.uk/2020/12/bypassing-user-mode-hooks-and-direct-invocation-of-system-calls-for-red-teams/)
+- [@hodg87](https://twitter.com/hodg87): [Malware Mitigation when Direct System Calls are Used](https://www.cyberbit.com/blog/endpoint-security/malware-mitigation-when-direct-system-calls-are-used/)
+- [@Cn33liz](https://twitter.com/Cneelis): [Combining Direct System Calls and sRDI to bypass AV/EDR](https://outflank.nl/blog/2019/06/19/red-team-tactics-combining-direct-system-calls-and-srdi-to-bypass-av-edr/) ([Code](https://github.com/outflanknl/Dumpert))
+- [@0x00dtm](https://twitter.com/0x00dtm): [Userland API Monitoring and Code Injection Detection](https://0x00sec.org/t/userland-api-monitoring-and-code-injection-detection/5565)
+- [@0x00dtm](https://twitter.com/0x00dtm): [Defeating Userland Hooks (ft. Bitdefender)](https://0x00sec.org/t/defeating-userland-hooks-ft-bitdefender/12496) ([Code](https://github.com/NtRaiseHardError/Antimalware-Research/tree/master/Generic/Userland%20Hooking/AntiHook))
+- [@mrgretzky](https://twitter.com/mrgretzky): [Defeating Antivirus Real-time Protection From The Inside](https://breakdev.org/defeating-antivirus-real-time-protection-from-the-inside/)
+- [@SpecialHoang](https://twitter.com/SpecialHoang): [Bypass EDR’s memory protection, introduction to hooking](https://medium.com/@fsx30/bypass-edrs-memory-protection-introduction-to-hooking-2efb21acffd6) ([Code](https://github.com/hoangprod/AndrewSpecial/tree/master))
+- [@xpn](https://twitter.com/_xpn_) and [@domchell](https://twitter.com/domchell): [Silencing Cylance: A Case Study in Modern EDRs](https://www.mdsec.co.uk/2019/03/silencing-cylance-a-case-study-in-modern-edrs/)
+- [@mrjefftang](https://twitter.com/mrjefftang): [Universal Unhooking: Blinding Security Software](https://threatvector.cylance.com/en_us/home/universal-unhooking-blinding-security-software.html) ([Code](https://github.com/CylanceVulnResearch/ReflectiveDLLRefresher))
+- [@spotheplanet](https://twitter.com/spotheplanet): [Full DLL Unhooking with C++](https://ired.team/offensive-security/defense-evasion/how-to-unhook-a-dll-using-c++)
+- [@hasherezade](https://twitter.com/hasherezade): [Floki Bot and the stealthy dropper](https://blog.malwarebytes.com/threat-analysis/2016/11/floki-bot-and-the-stealthy-dropper/)
+- [@hodg87](https://twitter.com/hodg87): [Latest Trickbot Variant has New Tricks Up Its Sleeve](https://www.cyberbit.com/blog/endpoint-security/latest-trickbot-variant-has-new-tricks-up-its-sleeve/)
+
+
+## References to SysWhispers
+
+- [@JFaust_](https://twitter.com/JFaust_): Process Injection [Part 1](https://sevrosecurity.com/2020/04/08/process-injection-part-1-createremotethread/), [Part 2](https://sevrosecurity.com/2020/04/13/process-injection-part-2-queueuserapc/), and [Alaris loader](https://sevrosecurity.com/2020/10/14/alaris-a-protective-loader/) project ([Code](https://github.com/cribdragg3r/Alaris))
+- [@0xPat](https://www.twitter.com/0xPat): [Malware Development Part 2](https://0xpat.github.io/Malware_development_part_2/)
+- [@brsn76945860](https://twitter.com/brsn76945860): [Implementing Syscalls In The CobaltStrike Artifact Kit](https://br-sn.github.io/Implementing-Syscalls-In-The-CobaltStrike-Artifact-Kit/)
+- [@Cn33liz](https://twitter.com/Cneelis) and [@_DaWouw](https://twitter.com/_DaWouw): [Direct Syscalls in Beacon Object Files](https://outflank.nl/blog/2020/12/26/direct-syscalls-in-beacon-object-files/) ([Code](https://github.com/outflanknl/InlineWhispers))
+    
 ## ⚠️ Caveats
   ❌ Graphical subsystem syscalls (win32k.sys) are not supported.
+  
   ❌ Tested on [Your Environments].
 
 ## 🙏 Credits
    Based on the original SysWhispers2 by @Jackson_T and @modexpblog.
-  Additional contributions by Mangala-Mnmatharaja🎯.
+   Additional contributions by Mangala-Mnmatharaja🎯.
 
 ## 📜 License
 Apache License 2.0. See LICENSE[http://www.apache.org/licenses/] for details.
