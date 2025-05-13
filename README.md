@@ -2,6 +2,7 @@
 
 🔧 SysWhispers2 helps with evasion by generating header/ASM files that implants can use to make direct system calls, bypassing user-mode hooks. This fork includes additional customizations and improvements.
 
+
 ## 🔑 Key Differences from Original SysWhispers2
   ✅ Enhanced Features: [Describe modifications, e.g., "Added support for XYZ syscalls."]
   
@@ -114,6 +115,12 @@ Add files and configure platform settings (x86/x64).
   
   ❌ Tested on [Your Environments].
 
+## Troubleshooting
+
+  - Type redefinitions errors: a project may not compile if typedefs in `syscalls.h` have already been defined.
+  - Ensure that only required functions are included (i.e. `--preset all` is rarely necessary).
+  - If a typedef is already defined in another used header, then it could be removed from `syscalls.h`.
+    
 ## 🙏 Credits
    Based on the original SysWhispers2 by @Jackson_T and @modexpblog.
    Additional contributions by Mangala-Mnmatharaja🎯.
