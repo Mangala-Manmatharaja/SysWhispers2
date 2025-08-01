@@ -1,6 +1,6 @@
 ## 🚀 SysWhispers2
 
-🔧 SysWhispers2 helps with evasion by generating header/ASM files that implants can use to make direct system calls, bypassing user-mode hooks. This fork includes additional customizations and impro.
+🔧 SysWhispers2 helps with evasion by generating header/ASM files that implants can use to make direct system calls, bypassing user-mode hooks. This fork includes additional customizations and improv.
 
 
 ## 🔑 Key Differences from Original SysWhispers2
