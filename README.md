@@ -12,7 +12,7 @@
 
 ## 🛠 Features
 
-✔ Generates header/ASM files for direct syscalls.
+✔ Generates header/ASM files for direct s.
 
 ✔ Supports all core syscalls with cross-version compatibility.
 
